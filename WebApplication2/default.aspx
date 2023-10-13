@@ -5,40 +5,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Valg app</title>
-    <link rel="stylesheet" href="SkoleValgProsjekt/styles.css"/>
+    <link rel="stylesheet" href="Style.css" />
+
 </head>
+
 <body>
 
     <form id="form1" runat="server">
+
+        <h1>Valg</h1>
         
         <asp:Button ID ="ButtonSearchParti" runat="server" Text="søk gjennom partier" OnClick="ButtonSearchParti_Click1" />
         
         <asp:TextBox ID="TextBoxSearchParti" runat="server"></asp:TextBox>
         <br />
-        
+        <br />
+
         <br />
 
 
-<%--        <asp:Button ID="AddNewPerson" runat="server" Text="Legg til ny person" OnClick="AddNewPerson_Click" />
-
-        <asp:TextBox ID="NewPersonFirstName" runat="server" ></asp:TextBox>
-
-        <asp:TextBox ID="NewPersonLastName" runat="server" ></asp:TextBox>
-    <asp:DropDownList runat="server"></asp:DropDownList>
-        <asp:TextBox ID="NewPersonID" runat="server" ></asp:TextBox>
-        <br />--%>
-
        
-        <asp:DropDownList ID="DropDownListParti" runat="server">
-                <asp:ListItem Selected="True" Value="0">Velg Parti</asp:ListItem>
-                <asp:ListItem Value="1">H</asp:ListItem>
-                <asp:ListItem Value="2">Pp</asp:ListItem>
-            </asp:DropDownList>
+       <asp:DropDownList ID="DropDownListWithData" runat="server" DataTextField="Text" DataValueField="Value" AppendDataBoundItems="true">
 
-<%--            <asp:Button ID="StemmeKnapp" runat="server" Text="Klikk her for å avgi stemme" OnClick="StemmeKnapp_Click" />--%>
 
-        <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+           <asp:ListItem Text="Velg et parti" Value="" />
+        </asp:DropDownList>
 
+
+            <asp:TextBox ID="kommuneboks" runat="server" Text="Skriv inn kommune"></asp:TextBox>
+            <asp:Button ID="StemmeKnapp" runat="server" Text="Klikk her for å avgi stemme" OnClick="StemmeKnapp_Click" />
+            <asp:Button ID="ButtonKommuneSok" runat="server" OnClick="ButtonKommuneSok_Click" Text="vis stemmer for kommune" />
+
+
+
+        <asp:GridView class="Ivory" ID="GridView1" runat="server"></asp:GridView>
+<%--       <asp:GridView ID="GridView2" runat="server" OnSelectedIndexChanged="GridView2_SelectedIndexChanged"></asp:GridView>--%>
     </form>
 </body>
 </html>

@@ -42,13 +42,40 @@ namespace WebApplication2
         protected global::System.Web.UI.WebControls.TextBox TextBoxSearchParti;
 
         /// <summary>
-        /// DropDownListParti control.
+        /// DropDownListWithData control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListParti;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListWithData;
+
+        /// <summary>
+        /// kommuneboks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox kommuneboks;
+
+        /// <summary>
+        /// StemmeKnapp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button StemmeKnapp;
+
+        /// <summary>
+        /// ButtonKommuneSok control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonKommuneSok;
 
         /// <summary>
         /// GridView1 control.
