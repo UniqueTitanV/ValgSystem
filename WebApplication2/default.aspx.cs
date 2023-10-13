@@ -150,7 +150,7 @@ namespace WebApplication2
                     "AND stemmer.kommuneNr=valgkrets.kommuneNr  " +
                     "AND stemmenummer > 1 " +
                     "GROUP BY stemmer.partiId, partier, KNavn " +
-                    "ORDER BY partier";
+                    "ORDER BY Knavn, partier";
                     using (SqlCommand selcmd = new SqlCommand(selectQuery, conn))
                     {
                         using (SqlDataReader reader = selcmd.ExecuteReader())
