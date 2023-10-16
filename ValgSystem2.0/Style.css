@@ -1,0 +1,31 @@
+﻿
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: #a4b0fc;
+    position: relative;
+    margin: 5px;
+    margin-left: 25px;
+
+}
+
+.Grid-Container {
+    margin-top: 10px;
+    position: absolute;
+
+
+}
+
+.Grid-Item {
+    position:absolute;
+    align-content: stretch;
+    width:300px;
+}
+.Grid-Item2{
+    margin-left:179%;
+    width: 225px;
+}
+
